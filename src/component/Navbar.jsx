@@ -27,18 +27,18 @@ const Navbar = () => {
 			</div>
 
 			<nav className="flex items-center justify-between w-full relative px-2 mt-2 md:px-7 shadow-md ">
-			<div className="flex items-center gap-4">
+				<div className="flex items-center gap-4">
 					{/* logo */}
 					<img className="w-[60px] max-w-full"
-					src={logo}
-					alt="logo"
-					
-				/>
-				<div>
-				<h1 className="text-xl md:text-2xl font-semibold text-[#424242]">Bangladeshi Studeo</h1>
-				<p className="text-[#424242]">is Trusted Duciment Site.</p>
+						src={logo}
+						alt="logo"
+
+					/>
+					<div>
+						<h1 className="text-xl md:text-2xl font-semibold text-[#424242]">Bangladeshi Studeo</h1>
+						<p className="text-[#424242]">is Trusted Duciment Site.</p>
+					</div>
 				</div>
-			</div>
 
 				{/* nav menus */}
 				<ul className="items-center gap-[20px] text-[1rem] text-[#424242] md:flex hidden font-semibold">

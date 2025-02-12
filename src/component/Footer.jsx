@@ -2,12 +2,12 @@
 
 
 // react icons
-import { FaApplePay, FaCcAmazonPay, FaCcDiscover, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaGooglePay, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import {  FaCcAmazonPay, FaCcDiscover, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaGooglePay, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail, MdOutlineLocalPhone } from "react-icons/md";
 import logo from "../assets/images/logo.png"
 import { FaXTwitter } from "react-icons/fa6";
-import { SiAmericanexpress, SiApplepay } from "react-icons/si";
+import {  SiApplepay } from "react-icons/si";
 import { LiaCcAmex } from "react-icons/lia";
 
 const Footer = () => {

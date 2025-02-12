@@ -9,8 +9,29 @@ import logo from "../assets/images/logo.png"
 import { FaXTwitter } from "react-icons/fa6";
 import {  SiApplepay } from "react-icons/si";
 import { LiaCcAmex } from "react-icons/lia";
-
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 const Footer = () => {
+
+	// for send email
+	const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
 	return (
 		<footer className="bg-[#111111]  w-full  sm:p-9 pt-5">
@@ -99,7 +120,7 @@ const Footer = () => {
 				<div className="">
 					<h3 className="text-[1.2rem] font-semibold text-text mb-2 text-[#ffffff]">Contact Us</h3>
 
-					<form action="" className="text-white space-y-1">
+					<form ref={form} onSubmit={sendEmail} action="" className="text-white space-y-1">
 						<div className="flex flex-col gap-1">
 							<label className="text-[#bdb9b9] ">Name:</label>
 							<input type="text" className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md" />

@@ -45,6 +45,7 @@ const Banner = () => {
 		  navigation={true} 
 		  autoplay={{ delay: 5000, disableOnInteraction: false }}
 		  modules={[Navigation, Autoplay]}
+		  lazy={true}
 		>
 		  {[slider1, slider2, slider3, slider4, slider5].map((slider, index) => (
 			<SwiperSlide key={index}>

@@ -8,12 +8,12 @@ const Services = () => {
 		AOS.init();
 	}, []);
 	return (
-		<div className="my-20">
-			<h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-center mb-12 text-[#222222]">Our Services</h1>
+		<div className="my-10 md:my-14 lg:my-20">
+			<h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-center mb-6 lg:mb-12 text-[#222222]">Our Services</h1>
 			<div className="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-6 w-[95%] mx-auto">
 
 				<div
-					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md "
+					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md"
 					data-aos="zoom-out-up">
 
 					{/*  image  */}

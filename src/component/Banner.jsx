@@ -13,38 +13,16 @@ import slider4 from "../assets/images/slider4.webp"
 import slider5 from "../assets/images/slider5.webp"
 
 // import required modules
-import { Navigation, Autoplay,Lazy } from 'swiper/modules';
-// const Banner = () => {
-// 	return (
-// 		<div className='bg-red-300 '>
-// 			<Swiper className="mySwiper h-[200px] md:h-[400px] lg:h-[500px]" navigation={true} autoplay={{
-// 				delay: 5000,
-// 				disableOnInteraction: false,
-// 			}} modules={[Navigation, Autoplay]}>
-// 				<SwiperSlide><div>
-// 					<img src={slider1} className='w-full   object-contain' alt="" /></div></SwiperSlide>
-// 				<SwiperSlide><div>
-// 					<img src={slider2} className='w-full   object-contain' alt="" /></div></SwiperSlide>
-// 				<SwiperSlide><div>
-// 					<img src={slider3} className='w-full   object-contain' alt="" /></div></SwiperSlide>
-// 				<SwiperSlide><div>
-// 					<img src={slider4} className='w-full   object-contain' alt="" /></div></SwiperSlide>
-// 				<SwiperSlide><div>
-// 					<img src={slider5} className='w-full   object-contain' alt="" /></div></SwiperSlide>
-				
-			
-// 			</Swiper>
-// 		</div>
-// 	);
-// };
+import { Navigation, Autoplay} from 'swiper/modules';
+
 const Banner = () => {
 	return (
-	  <div className='bg-red-300'>
+	  <div className='bg-red-300 overflow-hidden'>
 		<Swiper 
-		  className="mySwiper h-[200px] md:h-[400px] lg:h-[500px]" 
+		  className="mySwiper h-[200px] md:h-[400px] lg:h-[500px] overflow-hidden" 
 		  navigation={true} 
-		  autoplay={{ delay: 4000, disableOnInteraction: false }}
-		  modules={[Navigation, Autoplay,Lazy]}
+		  autoplay={{ delay: 3000, disableOnInteraction: false }}
+		  modules={[Navigation, Autoplay]}
 		  lazy={true}
 		>
 		  {[slider1, slider2, slider3, slider4, slider5].map((slider, index) => (

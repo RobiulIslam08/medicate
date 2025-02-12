@@ -2,36 +2,36 @@
 
 
 // react icons
-import {  FaCcAmazonPay, FaCcDiscover, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaGooglePay, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaCcAmazonPay, FaCcDiscover, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaGooglePay, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail, MdOutlineLocalPhone } from "react-icons/md";
 import logo from "../assets/images/logo.png"
 import { FaXTwitter } from "react-icons/fa6";
-import {  SiApplepay } from "react-icons/si";
+import { SiApplepay } from "react-icons/si";
 import { LiaCcAmex } from "react-icons/lia";
-import  { useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 const Footer = () => {
 
 	// for send email
 	const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+	const sendEmail = (e) => {
+		e.preventDefault();
 
-    emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+		emailjs
+			.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+				publicKey: 'YOUR_PUBLIC_KEY',
+			})
+			.then(
+				() => {
+					console.log('SUCCESS!');
+				},
+				(error) => {
+					console.log('FAILED...', error.text);
+				},
+			);
+	};
 
 	return (
 		<footer className="bg-[#111111]  w-full  sm:p-9 pt-5">
@@ -63,8 +63,8 @@ const Footer = () => {
 			<div
 				className="flex justify-between gap-[30px] flex-col sm:flex-row flex-wrap w-full  px-6 md:px-24">
 				<div className="w-full sm:w-[25%] ">
-
-					<div className="flex flex-col gap-[10px] text-primary ">
+					{/* for reach us */}
+					<div className="flex flex-col gap-[10px] text-primary items-center md:items-start">
 						<h3 className="text-[1.2rem] font-semibold text-text mb-2 text-[#ffffff] font-fontRobotoSlab">Reach Us</h3>
 						<span><a
 							className="text-[0.9rem] flex items-center gap-[8px]  cursor-pointer text-[#999999]">
@@ -85,8 +85,8 @@ const Footer = () => {
 					</div>
 
 				</div>
-
-				<div className="">
+				{/* for services */}
+				<div className="text-center md:text-left">
 					<h3 className="text-[1.2rem] font-semibold text-text mb-2 text-[#ffffff] font-fontRobotoSlab">Services</h3>
 					<div className="flex text-black flex-col gap-[10px] font-fontRoboto">
 						<p className="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-[#999999]">Service Name</p>
@@ -99,8 +99,8 @@ const Footer = () => {
 					</div>
 				</div>
 
-
-				<div className="">
+				{/* for link */}
+				<div className="text-center md:text-left">
 					<h3 className="text-[1.2rem] font-semibold text-text mb-2 text-[#ffffff]">Links</h3>
 					<div className="flex text-black flex-col gap-[10px]">
 						<p className="text-[0.9rem] text-text hover:text-primary cursor-pointer transition-all duration-200 text-[#999999]">Home</p>
@@ -116,9 +116,9 @@ const Footer = () => {
 					</div>
 				</div>
 
-
+				{/*for contact form  */}
 				<div className="">
-					<h3 className="text-[1.2rem] font-semibold text-text mb-2 text-[#ffffff]">Contact Us</h3>
+					<h3 className="text-[1.2rem] font-semibold text-text mb-2 text-[#ffffff] text-center md:text-left">Contact Us</h3>
 
 					<form ref={form} onSubmit={sendEmail} action="" className="text-white space-y-1">
 						<div className="flex flex-col gap-1">
@@ -135,7 +135,7 @@ const Footer = () => {
 							<textarea className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md"
 							></textarea>
 						</div>
-						<button type="submit" className="py-2 px-6 border border-[#e12454] bg-[#e12454] text-[#d8e4cde6] rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
+						<button type="submit" className="py-2 px-6 w-full border border-[#e12454] bg-[#e12454] text-[#d8e4cde6] rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
 					</form>
 				</div>
 

@@ -65,7 +65,7 @@ const Banner = () => {
       <Swiper
         className="w-full h-[200px] md:h-[400px] lg:h-[500px]"
         navigation={true}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         modules={[Navigation, Autoplay]}
         style={{ overflow: "hidden" }} // ✅ Swiper-এর জন্য overflow fix
       >

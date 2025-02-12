@@ -5,10 +5,10 @@ import Services from "../../component/Services";
 const Home = () => {
 	return (
 		<div>
-			  
-     <Banner></Banner>
-     <Services></Services>
-  
+
+			<Banner></Banner>
+			<Services></Services>
+
 		</div>
 	);
 };

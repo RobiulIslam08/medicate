@@ -1,5 +1,5 @@
 import { TbExternalLink } from "react-icons/tb";
-import services1 from "../assets/images/services1.jpg"
+import services1 from "../assets/images/services1.webp"
 import AOS from 'aos';
 import { useEffect } from "react";
 import 'aos/dist/aos.css';

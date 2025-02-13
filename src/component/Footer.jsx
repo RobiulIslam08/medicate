@@ -135,7 +135,7 @@ const Footer = () => {
 							<textarea className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md"
 							></textarea>
 						</div>
-						<button type="submit" className="py-2 px-6 w-full border border-[#e12454] bg-[#e12454] text-[#d8e4cde6] rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
+						<button type="submit" className="py-1 px-6 w-full border border-[#e12454] bg-[#e12454] text-[#d8e4cde6] rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
 					</form>
 				</div>
 

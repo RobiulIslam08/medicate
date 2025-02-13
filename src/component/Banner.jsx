@@ -57,7 +57,7 @@ import slider4 from "../assets/images/slider4.webp";
 import slider5 from "../assets/images/slider5.webp";
 
 // Import required modules
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const Banner = () => {
   return (
@@ -65,8 +65,11 @@ const Banner = () => {
       <Swiper
         className="w-full h-[200px] md:h-[400px] lg:h-[500px]"
         navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation, Autoplay,  Pagination, Mousewheel, Keyboard]}
         style={{ overflow: "hidden" }} // ✅ Swiper-এর জন্য overflow fix
       >
         {[slider1, slider2, slider3, slider4, slider5].map((slider, index) => (
@@ -87,4 +90,3 @@ const Banner = () => {
 };
 
 export default Banner;
-

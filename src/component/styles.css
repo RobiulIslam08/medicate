@@ -1,0 +1,21 @@
+.keen-slider {
+	perspective: 1000px;
+  }
+  
+  .keen-slider__slide {
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .keen-slider__slide:nth-child(odd) {
+	transform: rotateY(-30deg) scale(0.9);
+  }
+  
+  .keen-slider__slide:nth-child(even) {
+	transform: rotateY(30deg) scale(0.9);
+  }
+  
+  .keen-slider__slide--active {
+	transform: rotateY(0deg) scale(1);
+  }
+  

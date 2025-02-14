@@ -11,6 +11,22 @@ import { SiApplepay } from "react-icons/si";
 import { LiaCcAmex } from "react-icons/lia";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+// import social image
+import facebook from '../assets/images/social_image/facebook.png'
+import instagram from '../assets/images/social_image/instagram.png'
+import linkedin from '../assets/images/social_image/linkedin.png'
+import x from '../assets/images/social_image/twitter.png'
+import youtube from '../assets/images/social_image/youtube.png'
+
+// for payment card image
+import american_express from '../assets/images/payment_images/american-express.png'
+import amex from '../assets/images/payment_images/amex.png'
+import apple_pay from '../assets/images/payment_images/apple-pay.png'
+import google_pay from '../assets/images/payment_images/google-pay.png'
+import paypal from '../assets/images/payment_images/paypal.png'
+import discover from '../assets/images/payment_images/discover.png'
+import mastercard from '../assets/images/payment_images/mastercard.png'
+import visa from '../assets/images/payment_images/visa.png'
 const Footer = () => {
 
 	// for send email
@@ -129,13 +145,17 @@ const Footer = () => {
 							<label className="text-[#bdb9b9] ">Email:</label>
 							<input type="email" className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md" />
 						</div>
+						<div className="flex flex-col gap-1">
+							<label className="text-[#bdb9b9] ">Phone:</label>
+							<input type="number" className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md" />
+						</div>
 
 						<div className="flex flex-col gap-1">
 							<label className="text-[#bdb9b9] ">Message</label>
 							<textarea className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md"
 							></textarea>
 						</div>
-						<button type="submit" className="py-1 px-6 w-full border border-[#e12454] bg-[#e12454] text-[#d8e4cde6] rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
+						<button type="submit" className="py-1 px-6 w-full border border-[#e12454] bg-blue-500 hover:bg-blue-600 text-black rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
 					</form>
 				</div>
 
@@ -147,11 +167,11 @@ const Footer = () => {
 				<FaCcVisa className="text-2xl md:text-5xl text-[#082fca]" />
 				<FaCcDiscover className="text-2xl md:text-5xl text-[#e87800]" />
 				<FaCcMastercard className="text-2xl md:text-5xl text-[#e3001b]" />
-				<FaCcPaypal className="text-2xl md:text-5xl text-[#e3001b]" />
+				<FaCcPaypal className="text-2xl md:text-5xl text-[#00aee3]" />
 				<FaCcAmazonPay className="text-2xl md:text-5xl text-[#b4f079d2]" />
-				<LiaCcAmex className="text-2xl md:text-5xl text-[#b4f079d2]" />
-				<FaGooglePay className="text-2xl md:text-5xl text-[#8bdfe9d2]" />
-				<SiApplepay className="text-2xl md:text-5xl text-[#f0ec79d2]" />
+				<LiaCcAmex className="text-2xl md:text-5xl text-[#79cef0d2]" />
+				<FaGooglePay className="text-2xl md:text-5xl text-[#b7e7a0d2]" />
+				<SiApplepay className="text-2xl md:text-5xl text-[#767775d2]" />
 			</div>
 			<hr className="md:mx-24 mx-6 mt-6 border-gray-700" />
 			<p className="text-gray-500 font-fontRoboto flex justify-center items-center pt-5 md:pt-7 pb-4 md:pb-6">Copyright © 2025 Bangladesh Studeo.</p>

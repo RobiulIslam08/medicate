@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 // react icons
 
 import { IoClose } from "react-icons/io5"; // Import IoClose
@@ -65,17 +65,19 @@ const Navbar = () => {
 
 				{/* Toggle between menu and close icons */}
 				{/* Toggle between menu and close icons */}
-				{isMenuOpen ? (
-					<IoClose
-						className="text-[1.8rem] text-[#424242] cursor-pointer md:hidden flex"
-						onClick={() => setIsMenuOpen(false)}
-					/>
-				) : (
-					<IoIosMenu
-						className="text-[1.8rem] text-[#424242] cursor-pointer md:hidden flex"
-						onClick={() => setIsMenuOpen(true)}
-					/>
-				)}
+				<motion.div
+      className="md:hidden flex cursor-pointer"
+      initial={{ rotate: 0 }}
+      animate={{ rotate: isMenuOpen ? 180 : 0 }} // Rotate animation
+      transition={{ duration: 0.3, ease: "easeInOut" }} // Smooth transition
+      onClick={() => setIsMenuOpen(!isMenuOpen)}
+    >
+      {isMenuOpen ? (
+        <IoClose className="text-[1.8rem] text-[#424242]" />
+      ) : (
+        <IoIosMenu className="text-[1.8rem] text-[#424242]" />
+      )}
+    </motion.div>
 
 
 				{/* mobile sidebar */}

@@ -133,21 +133,21 @@ const Banner = () => {
       <style>
         {`
           .swiper-button-next, .swiper-button-prev {
-            width: 30px; /* বাটনের প্রস্থ */
-            height: 30px; /* বাটনের উচ্চতা */
-            background-color: rgba(255, 255, 255, 0.5); /* ব্যাকগ্রাউন্ড কালার */
+            width: 32px; /* বাটনের প্রস্থ */
+            height: 32px; /* বাটনের উচ্চতা */
+            background-color: rgba(255, 255, 255, 0.9); /* ব্যাকগ্রাউন্ড কালার */
             border-radius: 50%; /* বাটনকে গোলাকার করুন */
             color: #000; /* আইকনের কালার */
-            font-size: 16px; /* আইকনের সাইজ */
+            font-size: 18px; /* আইকনের সাইজ */
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .swiper-button-next::after, .swiper-button-prev::after {
-            font-size: 16px; /* আইকনের সাইজ ছোট করুন */
+            font-size: 18px; /* আইকনের সাইজ ছোট করুন */
           }
           .swiper-button-next:hover, .swiper-button-prev:hover {
-            background-color: rgba(255, 255, 255, 0.8); /* হোভার ইফেক্ট */
+            background-color: rgba(255, 255, 255, 0.6); /* হোভার ইফেক্ট */
           }
         `}
       </style>

@@ -8,14 +8,14 @@ const Services = () => {
 		AOS.init();
 	}, []);
 	return (
-		<div className="my-10 md:my-14 lg:my-20">
-			<h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-center mb-6 lg:mb-12 text-[#222222]"  >Our Services</h1>
-			
-			<div className="grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-6 w-[95%] mx-auto">
+		<div className="my-5 md:my-7 lg:my-9">
+			<h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-center mb-3 lg:mb-6 text-[#222222]"  >Our Services</h1>
+
+			<div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 justify-items-center gap-6 w-[90%] mx-auto">
 
 				<div
-					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md"
-					data-aos="fade-up">
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
 
 					{/*  image  */}
 					<img
@@ -26,11 +26,9 @@ const Services = () => {
 					{/*  text  */}
 					<div
 						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
-						<h1 className="text-[1.5rem] font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
-						<p className="text-center z-20 opacity-100 transition-all duration-700 text-[#fff] font-semibold text-[0.9rem] px-2">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
-						<TbExternalLink className="text-3xl mt-4 text-[#b4f079d2]" />
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
 					</div>
 
 					{/*  bottom shadow  */}
@@ -39,8 +37,8 @@ const Services = () => {
 					</div>
 				</div>
 				<div
-					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md"
-					data-aos="fade-up">
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
 
 					{/*  image  */}
 					<img
@@ -51,11 +49,9 @@ const Services = () => {
 					{/*  text  */}
 					<div
 						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
-						<h1 className="text-[1.5rem] font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
-						<p className="text-center z-20 opacity-100 transition-all duration-700 text-[#fff] font-semibold text-[0.9rem] px-2">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
-						<TbExternalLink className="text-3xl mt-4 text-[#b4f079d2]" />
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
 					</div>
 
 					{/*  bottom shadow  */}
@@ -64,8 +60,8 @@ const Services = () => {
 					</div>
 				</div>
 				<div
-					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md"
-					data-aos="fade-up">
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
 
 					{/*  image  */}
 					<img
@@ -76,11 +72,9 @@ const Services = () => {
 					{/*  text  */}
 					<div
 						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
-						<h1 className="text-[1.5rem] font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
-						<p className="text-center z-20 opacity-100 transition-all duration-700 text-[#fff] font-semibold text-[0.9rem] px-2">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
-						<TbExternalLink className="text-3xl mt-4 text-[#b4f079d2]" />
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
 					</div>
 
 					{/*  bottom shadow  */}
@@ -89,8 +83,8 @@ const Services = () => {
 					</div>
 				</div>
 				<div
-					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md"
-					data-aos="fade-up">
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
 
 					{/*  image  */}
 					<img
@@ -101,11 +95,9 @@ const Services = () => {
 					{/*  text  */}
 					<div
 						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
-						<h1 className="text-[1.5rem] font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
-						<p className="text-center z-20 opacity-100 transition-all duration-700 text-[#fff] font-semibold text-[0.9rem] px-2">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
-						<TbExternalLink className="text-3xl mt-4 text-[#b4f079d2]" />
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
 					</div>
 
 					{/*  bottom shadow  */}
@@ -114,8 +106,8 @@ const Services = () => {
 					</div>
 				</div>
 				<div
-					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md"
-					data-aos="fade-up">
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
 
 					{/*  image  */}
 					<img
@@ -126,11 +118,9 @@ const Services = () => {
 					{/*  text  */}
 					<div
 						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
-						<h1 className="text-[1.5rem] font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
-						<p className="text-center z-20 opacity-100 transition-all duration-700 text-[#fff] font-semibold text-[0.9rem] px-2">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
-						<TbExternalLink className="text-3xl mt-4 text-[#b4f079d2]" />
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
 					</div>
 
 					{/*  bottom shadow  */}
@@ -139,8 +129,8 @@ const Services = () => {
 					</div>
 				</div>
 				<div
-					className="w-[300px] md:w-[300px] lg:w-[310px] h-[350px] relative overflow-hidden cursor-pointer rounded-md"
-					data-aos="fade-up">
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
 
 					{/*  image  */}
 					<img
@@ -151,11 +141,9 @@ const Services = () => {
 					{/*  text  */}
 					<div
 						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
-						<h1 className="text-[1.5rem] font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
-						<p className="text-center z-20 opacity-100 transition-all duration-700 text-[#fff] font-semibold text-[0.9rem] px-2">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
-						<TbExternalLink className="text-3xl mt-4 text-[#b4f079d2]" />
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
 					</div>
 
 					{/*  bottom shadow  */}
@@ -163,6 +151,78 @@ const Services = () => {
 						className="w-full opacity-100 z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0">
 					</div>
 				</div>
+				<div
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
+
+					{/*  image  */}
+					<img
+						src={services1}
+						alt="animated_card"
+						className="w-full h-full object-cover scale-[1.1] transition-all duration-700" />
+
+					{/*  text  */}
+					<div
+						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
+					</div>
+
+					{/*  bottom shadow  */}
+					<div
+						className="w-full opacity-100 z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0">
+					</div>
+				</div>
+				<div
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
+
+					{/*  image  */}
+					<img
+						src={services1}
+						alt="animated_card"
+						className="w-full h-full object-cover scale-[1.1] transition-all duration-700" />
+
+					{/*  text  */}
+					<div
+						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
+					</div>
+
+					{/*  bottom shadow  */}
+					<div
+						className="w-full opacity-100 z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0">
+					</div>
+				</div>
+				<div
+					className="w-[95px] md:w-[120px] lg:w-[140px] h-[95px] md:h-[120px] lg:h-[140px]  relative overflow-hidden cursor-pointer rounded-md"
+				>
+
+					{/*  image  */}
+					<img
+						src={services1}
+						alt="animated_card"
+						className="w-full h-full object-cover scale-[1.1] transition-all duration-700" />
+
+					{/*  text  */}
+					<div
+						className="absolute top-[50%] transform translate-y-[-50%] transition-all duration-500 w-full h-full left-0 z-20 flex items-center justify-center flex-col">
+						<h1 className="text-base font-bold  text-center capitalize text-[#e12454]">Treatment</h1>
+
+						<TbExternalLink className="text-[18px] mt-4 text-[#b4f079d2]" />
+					</div>
+
+					{/*  bottom shadow  */}
+					<div
+						className="w-full opacity-100 z-10 transition-all duration-500 bg-gradient-to-b from-[rgb(0,0,0,0.001)] to-[rgb(0,0,0,0.5)] h-[100%] absolute bottom-0 left-0 right-0">
+					</div>
+				</div>
+
+
+
 
 
 

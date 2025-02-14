@@ -51,12 +51,12 @@ const Footer = () => {
 					</div>
 				</div>
 				{/* socila link */}
-				<div className="flex  gap-4 text-2xl md:text-3xl text-[#e12454]  mt-4">
-					<FaFacebook className="hover:text-[#e12454] transition-all duration-300 ease-in hover:scale-125" />
-					<FaInstagram className="hover:text-[#e12454] transition-all duration-300 ease-in hover:scale-125" />
-					<FaLinkedinIn className="hover:text-[#e12454] transition-all duration-300 ease-in hover:scale-125" />
-					<FaYoutube className="hover:text-[#e12454] transition-all duration-300 ease-in hover:scale-125" />
-					<FaXTwitter className="hover:text-[#e12454] transition-all duration-300 ease-in hover:scale-125" />
+				<div className="flex  gap-4 text-2xl md:text-3xl   mt-4">
+					<FaFacebook className="hover:text-[#0867ffe0] text-[#0866ff] transition-all duration-300 ease-in hover:scale-125" />
+					<FaInstagram className="hover:text-[#e12454] text-[#e12454] transition-all duration-300 ease-in hover:scale-125" />
+					<FaLinkedinIn className="text-[#0a66c2] transition-all duration-300 ease-in hover:scale-125" />
+					<FaYoutube className="text-[#ff0033] transition-all duration-300 ease-in hover:scale-125" />
+					<FaXTwitter className="text-[#ecc0cb8c] transition-all duration-300 ease-in hover:scale-125" />
 
 				</div>
 			</div>
@@ -144,10 +144,10 @@ const Footer = () => {
 
 			{/* payment card */}
 			<div className="flex gap-2 md:gap-4  justify-center items-center mt-4 md:mt-7">
-				<FaCcVisa className="text-2xl md:text-5xl text-[#95b971fc]" />
-				<FaCcDiscover className="text-2xl md:text-5xl text-[#d4a842]" />
-				<FaCcMastercard className="text-2xl md:text-5xl text-[#7981efd2]" />
-				<FaCcPaypal className="text-2xl md:text-5xl text-[#f09aced2]" />
+				<FaCcVisa className="text-2xl md:text-5xl text-[#082fca]" />
+				<FaCcDiscover className="text-2xl md:text-5xl text-[#e87800]" />
+				<FaCcMastercard className="text-2xl md:text-5xl text-[#e3001b]" />
+				<FaCcPaypal className="text-2xl md:text-5xl text-[#e3001b]" />
 				<FaCcAmazonPay className="text-2xl md:text-5xl text-[#b4f079d2]" />
 				<LiaCcAmex className="text-2xl md:text-5xl text-[#b4f079d2]" />
 				<FaGooglePay className="text-2xl md:text-5xl text-[#8bdfe9d2]" />

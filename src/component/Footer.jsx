@@ -9,45 +9,15 @@ import logo from "../assets/images/logo.png"
 import { FaXTwitter } from "react-icons/fa6";
 import { SiApplepay } from "react-icons/si";
 import { LiaCcAmex } from "react-icons/lia";
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-// import social image
-import facebook from '../assets/images/social_image/facebook.png'
-import instagram from '../assets/images/social_image/instagram.png'
-import linkedin from '../assets/images/social_image/linkedin.png'
-import x from '../assets/images/social_image/twitter.png'
-import youtube from '../assets/images/social_image/youtube.png'
 
-// for payment card image
-import american_express from '../assets/images/payment_images/american-express.png'
-import amex from '../assets/images/payment_images/amex.png'
-import apple_pay from '../assets/images/payment_images/apple-pay.png'
-import google_pay from '../assets/images/payment_images/google-pay.png'
-import paypal from '../assets/images/payment_images/paypal.png'
-import discover from '../assets/images/payment_images/discover.png'
-import mastercard from '../assets/images/payment_images/mastercard.png'
-import visa from '../assets/images/payment_images/visa.png'
+
 const Footer = () => {
 
-	// for send email
-	const form = useRef();
 
-	const sendEmail = (e) => {
-		e.preventDefault();
 
-		emailjs
-			.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-				publicKey: 'YOUR_PUBLIC_KEY',
-			})
-			.then(
-				() => {
-					console.log('SUCCESS!');
-				},
-				(error) => {
-					console.log('FAILED...', error.text);
-				},
-			);
-	};
+	
+
+	
 
 	return (
 		<footer className="bg-[#111111]  w-full  sm:p-9 pt-5">
@@ -136,26 +106,26 @@ const Footer = () => {
 				<div className="">
 					<h3 className="text-[1.2rem] font-semibold text-text mb-2 text-[#ffffff] text-center md:text-left">Contact Us</h3>
 
-					<form ref={form} onSubmit={sendEmail} action="" className="text-white space-y-1">
+					<form  action="" className="text-white space-y-1">
 						<div className="flex flex-col gap-1">
 							<label className="text-[#bdb9b9] ">Name:</label>
-							<input type="text" className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md" />
+							<input type="text" className="border border-[#fff] focus:border-[#fff] transition-all duration-300 outline-none p-1 rounded-md" />
 						</div>
 						<div className="flex flex-col gap-1">
 							<label className="text-[#bdb9b9] ">Email:</label>
-							<input type="email" className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md" />
+							<input type="email" className="border border-[#fff] focus:border-[#fff] transition-all duration-300 outline-none p-1 rounded-md" />
 						</div>
 						<div className="flex flex-col gap-1">
 							<label className="text-[#bdb9b9] ">Phone:</label>
-							<input type="number" className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md" />
+							<input type="number" className="border border-[#fff] focus:border-[#fff] transition-all duration-300 outline-none p-1 rounded-md" />
 						</div>
 
 						<div className="flex flex-col gap-1">
 							<label className="text-[#bdb9b9] ">Message</label>
-							<textarea className="border border-[#b4f079d2] focus:border-[#aef963e6] transition-all duration-300 outline-none p-1 rounded-md"
+							<textarea className="border border-[#fff] focus:border-[#fff] transition-all duration-300 outline-none p-1 rounded-md"
 							></textarea>
 						</div>
-						<button type="submit" className="py-1 px-6 w-full border border-[#e12454] bg-blue-500 hover:bg-blue-600 text-black rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
+						<button type="submit" className="py-1 px-6 w-full border  bg-blue-500 hover:bg-blue-600 text-black rounded font-[500] relative overflow-hidden z-10 mt-[10px]">Submit</button>
 					</form>
 				</div>
 

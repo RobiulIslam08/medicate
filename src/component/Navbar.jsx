@@ -12,7 +12,7 @@ const Navbar = () => {
 	return (
 		<div className="">
 			{/* marque nav  */}
-			<div className="flex bg-green-500 justify-between items-center ">
+			<div className="flex bg-blue-400  justify-between items-center ">
 				<h1
 					className="bg-[#e12454] text-white w-20 px-4 py-1 md:py-2 font-semibold"
 					style={{ clipPath: "polygon(0 0, 100% 0, 84% 100%, 0% 100%)" }}
@@ -26,7 +26,7 @@ const Navbar = () => {
 				</marquee>
 			</div>
 
-			<nav className="flex items-center justify-between w-full relative px-2 mt-2 md:px-7 shadow-md  ">
+			<nav className="flex items-center justify-between w-full relative px-2 mt-2 md:px-7 shadow-md ">
 				<div className="flex items-center gap-4">
 					{/* logo */}
 					<img className="w-[60px] max-w-full"

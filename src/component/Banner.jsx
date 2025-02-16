@@ -95,11 +95,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import slider1 from "../assets/images/sliderOne.jpg";
-import slider2 from "../assets/images/sliderTwo.jpg";
-import slider3 from "../assets/images/sliderThree.jpg";
-import slider4 from "../assets/images/sliderFour.jpg";
-import slider5 from "../assets/images/slider5.jpg";
+import slider1 from "../assets/images/slide1.jpg";
+import slider2 from "../assets/images/slide2.jpg";
+import slider3 from "../assets/images/slide3.jpg";
+import slider4 from "../assets/images/slide4.jpg";
+import slider5 from "../assets/images/slide5.jpg";
 import { Navigation, Autoplay, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const Banner = () => {
@@ -120,7 +120,7 @@ const Banner = () => {
             <div className="h-full w-full">
               <img
                 src={slider}
-                className="w-full h-full object-cover block"
+                className="w-full h-full object-contain block"
                 alt={`Slider ${index + 1}`}
                 loading="lazy"
               />
@@ -135,7 +135,7 @@ const Banner = () => {
           .swiper-button-next, .swiper-button-prev {
             width: 32px; /* বাটনের প্রস্থ */
             height: 32px; /* বাটনের উচ্চতা */
-            background-color: rgba(255, 255, 255, 0.9); /* ব্যাকগ্রাউন্ড কালার */
+            background-color: #51a2ff; /* ব্যাকগ্রাউন্ড কালার */
             border-radius: 50%; /* বাটনকে গোলাকার করুন */
             color: #000; /* আইকনের কালার */
             font-size: 18px; /* আইকনের সাইজ */
@@ -147,7 +147,7 @@ const Banner = () => {
             font-size: 18px; /* আইকনের সাইজ ছোট করুন */
           }
           .swiper-button-next:hover, .swiper-button-prev:hover {
-            background-color: rgba(255, 255, 255, 0.6); /* হোভার ইফেক্ট */
+            background-color: #99a3ff; /* হোভার ইফেক্ট */
           }
         `}
       </style>
